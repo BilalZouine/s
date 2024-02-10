@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css 1 de  site web .css">
+    <link rel="stylesheet" href="./css 2 de  site web .css">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body class="Addressd ">
+    
+    <div class="   cssd  container-6 mx-auto mt-3" style="position: relative;left: 10px;">
+        <div class="bg-dark rounded-5 logo12 mx-auto ">
+            <a href="./index.html"><img src="./logo.png" class="w-75 mb-2 p-1 d-block mx-auto" alt=""></a>
+        </div>
+
+        <div class="row rounded  bg-white cv12 " style="border: 1px solid black; ;">
+            <div class="row  mx-auto m-0 rounded-2  " style=" background-color: #f0f2f2 ;padding:10px 0;">
+                <h1 class="col-11 m-0 text-dark" style="font-size: 20px;">Add a credit or debit card</h1>
+                <a href="./cart.html" class="col-1">
+                    <i class="fa-sharp fa-solid fa-x"></i>
+                </a>
+            </div>
+            <form  class="was-validated mx-2 w-100  p-2" id="cardForm" >
+                <table class="table cssd3 ">
+                    <tbody >
+                        <tr>
+                            <td>
+                                <label class="form-label">Card number</label>
+                            </td>
+                            <td>
+                                <input type="text" name="" id="" class="form-control" pattern="[0-9]+" placeholder="123 456 7..." minlength="10" maxlength="19" required>
+                                <div class="invalid-feedback">Please enter your Card number</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="form-label">Name on card</label>
+                            </td>
+                            <td>
+                                <input type="text" name="" id="" class="form-control" pattern="[A-Za-z]+" placeholder="name on card" minlength="3" maxlength="19" required>
+                                <div class="invalid-feedback">Please enter Name on card</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="form-label">Expiration Date</label>
+                            </td>
+                            <td>
+                                <div class="row ">
+                                    <label for="" class="form-label col"></label>
+                                    <select name="month" class="col p-0 rounded-2" style="border: 2px solid rgb(178, 207, 198);position: relative;left: 30px ; width: 50px;padding: 0px !important;">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                    </select>
+                                    <span class="col"></span>
+                                    <select name="year" class="col-4 p-0 rounded-2" style="border: 2px solid rgb(178, 207, 198); position: relative;right: 8%;">
+                                        <option value="2024">2024</option>
+                                        <option value="2025">2025</option>
+                                        <option value="2026">2026</option>
+                                        <option value="2027">2027</option>
+                                        <option value="2028">2028</option>
+                                        <option value="2029">2029</option>
+                                        <option value="2030">2030</option>
+                                        <option value="2031">2031</option>
+                                        <option value="2032">2032</option>
+                                        <option value="2033">2033</option>
+                                        <option value="2034">2034</option>
+                                    </select>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="form-label">Security code (CVV/CVC)</label>
+                            </td>
+                            <td>
+                                <input type="text" name="" id="" class="form-control form-control-sm" style="width: 100px !important;" minlength="3" maxlength="3" placeholder="123" pattern="[9-0]+" required>
+                                <div class="invalid-feedback">Please enter Security code</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <div class="form-check">
+                                    <input type="checkbox" name="" id="" class="form-check-input">
+                                    <label for="" class="form-check-label">Set as default payment method.</label>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+            <div class=" rounded-2 px-5 py-1 w-100 Addresc  mx-auto " style=" background-color: #f0f2f2 ;padding:10px 0;">
+                <div class="row my-2 style-with">
+                  <a href="./cart.html" class="link col btn-danger rounded-5 p-2 text-center "  id="confirmBtn"  style="display: none;white-space: nowrap; ">Add
+                    card</a>
+                  <span class="col">
+                  </span>
+                  <a href="./index.html" class="link col btn btn-outline-dark text-dark rounded-5 p-2 text-center ">Cancel</a>
+                </div>
+            </div>
+           
+        </div>
+
+       
+
+
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const cardForm = document.getElementById('cardForm');
+                const confirmBtn = document.getElementById('confirmBtn');
+
+                function checkFormValidity() {
+                    const inputs = cardForm.querySelectorAll('input[required]');
+                    let isValid = true;
+                    inputs.forEach(function (input) {
+                        if (!input.value.trim()) {
+                            isValid = false;
+                        }
+                    });
+                    return isValid;
+                }
+
+                function toggleConfirmBtnVisibility() {
+                    if (checkFormValidity()) {
+                        confirmBtn.style.display = 'block';
+                    } else {
+                        confirmBtn.style.display = 'none';
+                    }
+                }
+
+                cardForm.addEventListener('input', toggleConfirmBtnVisibility);
+
+                confirmBtn.addEventListener('click', function () {
+                    alert("L'opération s'est terminée avec succès");
+                });
+            });
+        </script>
+            <script  src="./bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
+
+

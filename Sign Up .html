@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="stylesheet" href="./css 1 de  site web .css">
+    <link rel="stylesheet" href="./css 2 de  site web .css">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<style>
+    .contaner5 {
+        width: 60% !important;
+        height: auto !important;
+        margin: auto;
+    }
+
+    .inputm {
+        width: 90%;
+        margin: auto;
+    }
+
+    .label {
+        width: 140px;
+    }
+
+    /* {
+            transform: scale(0.9) !important;
+        } */
+
+    .Addressq {
+        transform: scale(0.8) !important;
+    }
+
+    label {
+        font-size: 11px;
+        font-weight: bold;
+        white-space: nowrap;
+    }
+
+    @media screen and (max-width:480px) {
+
+        .contaner1 {
+            transform: scale(0.9, 1.1) !important;
+
+        }
+
+        .contaner5 {
+            width: 100% !important;
+        }
+
+
+
+        input,
+        label {
+            font-size: 9px !important;
+
+        }
+
+        .rounde {
+            margin-bottom: 60px !important;
+        }
+
+    }
+</style>
+</head>
+
+<body class="Addressq" style="height: 100vh !important; overflow: hidden;">
+    <div class="container">
+        <div class="">
+            <div class="bg-dark logo rounded-5 rounde  mt-2 mx-auto "
+                style="width: 300px !important; height: 50px  ;margin-bottom: 10px;">
+                <a href="./index.html"><img src="./logo.png" class="w-75 mb-2 p-1 d-block mx-auto" alt=""></a>
+            </div>
+            <div class=" mx-auto">
+
+                <div id="loginForm">
+                    <div class="contaner1 ">
+
+
+                        <div class=" rounded-2 contaner5 ">
+
+                            <div class=" rounded-2  mx-auto " style=" background-color: #f0f2f2 ;padding:10px 0;">
+                                <h1 class="w-50 mb-3 text-dark Address mx-auto">Create Account</h1>
+                            </div>
+                            <div class="container p-3 mx-3">
+                                <form action="" class="was-validated" id="cardForm">
+                                    <table class="table table-borderless ">
+                                        <tbody>
+                                            <tr>
+                                                <td class="label">
+                                                    <label class="form-label  "> Your name :</label>
+                                                </td>
+                                                <td>
+
+                                                    <input type="text" name="" id=""
+                                                        class=" w-75 form-control form-control-sm" pattern="[A-Za-z]+"
+                                                        placeholder="Last name" minlength="3" maxlength="10" required>
+                                                    <div class="invalid-feedback mx-auto">Please enter First name*</div>
+
+                                                </td>
+                                                <td>
+
+                                                    <input type="text" name="" id=""
+                                                        class=" w-100 form-control form-control-sm"
+                                                        style="transform: translate(-7px);" pattern="[A-Za-z]+"
+                                                        placeholder="Last name" minlength="3" maxlength="10" required>
+                                                    <div class="invalid-feedback mx-auto">Please enter Last name*</div>
+
+
+                                                </td>
+
+
+                                            </tr>
+
+                                            <tr>
+                                                <td class="label">
+                                                    <label class="form-label  col"> mobile numbe : </label>
+                                                </td>
+                                                <td colspan="2">
+                                                    <input type="tel" name="Contact" id="Contact"
+                                                        class="form-control w-100 inputm form-control-sm  " col
+                                                        placeholder="123 456 78." minlength="5" pattern="[0-9]+"
+                                                        maxlength="14" required>
+                                                    <div class="valid-feedback"></div>
+                                                    <div class="invalid-feedback inputm mx-auto">Please enter mobile
+                                                        phone number*</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="label">
+                                                    <label class="form-label col "> Email : </label>
+
+                                                </td>
+                                                <td colspan="2">
+                                                    <input type="email" name="" id=""
+                                                        class=" form-control form-control-sm  " pattern="[A-Za-z0-9@.]+"
+                                                        placeholder="abc...@gmail.com" minlength="3" maxlength="19"
+                                                        required>
+                                                    <div class="valid-feedback"></div>
+                                                    <div class="invalid-feedback inputm mx-auto">Please enter email*
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="label">
+                                                    <label class="form-label col "> Password : </label>
+                                                </td>
+                                                <td colspan="2">
+                                                    <input type="password" name="" id=""
+                                                        class=" form-control  form-control-sm " pattern="[A-Za-z0-9]+"
+                                                        placeholder=" At Least 6 Characters" minlength="6"
+                                                        maxlength="19" required>
+                                                    <div class="valid-feedback"></div>
+                                                    <div class="invalid-feedback inputm mx-auto">Passwords must be at
+                                                        least 6
+                                                        characters*</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="label">
+                                                    <label class="form-label  ">Reenter password: </label>
+                                                </td>
+                                                <td colspan="2">
+                                                    <input type="password" name="" id=""
+                                                        class=" form-control  form-control-sm  " pattern="[A-Za-z0-9]+"
+                                                        placeholder=" At Least 6 Characters" minlength="6"
+                                                        maxlength="19" required>
+                                                    <div class="valid-feedback"></div>
+                                                    <div class="invalid-feedback inputm mx-auto"> Please Reenter
+                                                        password*</div>
+                                                </td>
+                                        </tbody>
+                                    </table>
+
+
+                                </form>
+
+
+                            </div>
+
+                            <div class=" rounded-2 px-5 py-1 w-100 Addresc  mx-auto "
+                                style=" background-color: #50d7d7  ;padding:10px 0;margin-top: 10px;">
+                                <div class="row my-2 style-with">
+                                    <a href="./index.html" class="link col btn-danger rounded-5 p-2 text-center "
+                                        id="confirmBtn" style="display: none; ">Sign Up</a>
+                                    <span class="col">
+                                    </span>
+                                    <a href="./index.html"
+                                        class="link col btn btn-outline-dark rounded-5 p-2 text-center ">Cancel</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    </div>
+    </div>
+
+
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const cardForm = document.getElementById('cardForm');
+            const confirmBtn = document.getElementById('confirmBtn');
+
+            function checkFormValidity() {
+                const inputs = cardForm.querySelectorAll('input[required]');
+                let isValid = true;
+                inputs.forEach(function (input) {
+                    if (!input.value.trim()) {
+                        isValid = false;
+                    }
+                });
+                return isValid;
+            }
+
+            function toggleConfirmBtnVisibility() {
+                if (checkFormValidity()) {
+                    confirmBtn.style.display = 'block';
+                } else {
+                    confirmBtn.style.display = 'none';
+                }
+            }
+
+            cardForm.addEventListener('input', toggleConfirmBtnVisibility);
+
+            confirmBtn.addEventListener('click', function () {
+                alert("Votre inscription a été complétée avec succès");
+            });
+        });
+    </script>
+<script  src="./bootstrap.bundle.min.js"></script>
+
+
+
+
+</body>
+
+</html>

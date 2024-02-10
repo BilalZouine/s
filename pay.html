@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>local</title>
+    <link rel="stylesheet" href="./css 1 de  site web .css">
+    <link rel="stylesheet" href="./css 2 de  site web .css">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body class="Addressq" style="height: 100vh !important;">
+
+    <div class="bg-dark rounded-5 w-25  mx-auto ">
+        <a href="./index.html"><img src="./logo.png" class="w-75 mb-2 p-1 d-block mx-auto" alt=""></a>
+    </div>
+    <div class="row contaner10 ">
+
+
+        <div class=" col-sm-7 rounded contaner5  ">
+            <h1 class=" w-100  Addresc mt-2 mx-auto container-fluid  p-4  rounded-2">Add Address</h1>
+            <form action="" class="was-validated m-3 px-5" id="cardForm">
+
+                <div>
+                    <label for="Countrys" class="form-label w-50 text-dark">Country/Region :</label>
+                    <input class="form-control w-50" list="Country" name="Countrys" id="Countrys" placeholder="Morocco">
+                    <datalist id="Country">
+                        <option value="Morocco">Morocco</option>
+                        <option value="France">France</option>
+                        <option value="Japan">Japan</option>
+                        <option value="Brazil">Brazil</option>
+                        <option value="Australia">Australia</option>
+                        <option value="Canada">Canada</option>
+                        <option value="SouthAfrica">South Africa</option>
+                        <option value="India">India</option>
+                        <option value="Mexico">Mexico</option>
+                        <option value="Italy">Italy</option>
+                    </datalist>
+                    <div class="row">
+
+                        <div class="my-2 col-sm-5 mb-5">
+                            <label for="Contact " class="form-label">Personal information :</label>
+                            <input type="text" name="Contact" id="Contact" pattern="[A-Za-z]+"
+                                class="form-control form-control-sm  col-5" placeholder="Contact name*" required>
+                            <div class="valid-feedback">Contact Name</div>
+                            <div class="invalid-feedback">Please enter a Contact Name*</div>
+                        </div>
+                        <div class=" row col-sm-6 mx-2 mb-5"
+                            style="display: flex; justify-content:start !important;align-items: end;">
+                            <div class="  " style="width: 35%;">
+                                <input type="text" name="Contact" id="Contact" pattern="[+-9]+"
+                                    class="form-control form-control-sm rts py-2 col-5 "
+                                    style="font-size:9px !important;" value="+212" placeholder="country code" required>
+                                <div class="valid-feedback">country code</div>
+                                <div class="invalid-feedback"> Please enter country code* </div>
+                            </div>
+                            <div class="  formposi" style="width: 65%;">
+                                <input type="tel" name="Contact" id="Contact"
+                                    class="form-control form-control-sm rts col-5"
+                                    placeholder="Please enter mobile phone number*" minlength="5" pattern="[0-9]+"
+                                    maxlength="14" required>
+                                <div class="valid-feedback">your mobile phone number</div>
+                                <div class="invalid-feedback">Please enter mobile phone number*</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="df">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <label for="Address " class="form-label">Address :</label>
+                                <input type="text" name="house" id="house" pattern="[A-Za-z0-9]+"
+                                    class="form-control form-control-sm rts col-5"
+                                    placeholder="Street, house/apartment/unit*" required>
+                                <div class="valid-feedback"></div>
+                                <div class="invalid-feedback">Please enter an address*</div>
+                            </div>
+                            <div class="col-sm-6 my-1 py-4 ">
+                                <input type="text" name="Apt" id="Apt" class="form-control form-control-sm  col-5"
+                                    placeholder="Apt,Suite,Unit,etc.（Optional）" pattern="[A-Za-z0-9]+">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="my-2 col-sm-4">
+                                <input type="text" name="region" id="region" pattern="[A-Za-z0-9]+"
+                                    class="form-control form-control-sm rts col-5" placeholder="region " required>
+                                <div class="valid-feedback"></div>
+                                <div class="invalid-feedback">Please enter region region or zoon*</div>
+                            </div>
+                            <div class="col-sm-4 my-2">
+                                <input type="text" name="city" id="city" pattern="[A-Za-z0-9]+"
+                                    class="form-control form-control-sm rts col-5" placeholder="city " required>
+                                <div class="valid-feedback"></div>
+                                <div class="invalid-feedback">Please enter city*</div>
+                            </div>
+                            <div class="col-sm-4 my-2">
+                                <input type="text" name="ZIP Code" id="ZIP-Code"
+                                    class="form-control form-control-sm  col-5" placeholder="ZIP Code"
+                                    pattern="[A-Za-z0-9]+" required>
+                                <div class="valid-feedback"></div>
+                                <div class="invalid-feedback">Please enter a ZIP/Postal Code* </div>
+                            </div>
+                            <div class="my-2">
+                                <input type="checkbox" class="form-check-input" name="" id="">
+                                <label for="" class="form-check-labwel">Set as default shipping address</label>
+
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </form>
+            
+            <div class=" rounded-2 px-5 py-1 w-100 Addresc Addresc mb-2 mx-auto ">
+                <div class="row my-2 style-with">
+                  <a href="./cart.html" class="link col btn-danger rounded-5 p-2 text-center "  id="confirmBtn"  style="display: none; ">Add
+                    Address</a>
+                  <span class="col">
+                  </span>
+                  <a href="./index.html" class="link col btn btn-outline-dark rounded-5 p-2 text-center ">Cancel</a>
+                </div>
+            </div>
+        </div>
+        <div class="w border-2  rounded  border-info mx-auto p-2" style="border: 2px solid skyblue; width: 350px; height: 345px;">
+
+
+            <table class="table w  hollo ">
+                <thead>
+                    <th colspan="2">
+                        <h1 style="font-size: 20px !important ; white-space: nowrap;">Résumé </h1>
+                    </th>
+                </thead>
+                <tbody>
+                    <tr style="border-bottom: #fff;height: 60px !important;">
+                        <td> Frais de livraison livraison</td>
+                        <td>100 DHs</td>
+                    </tr>
+                    <tr>
+                        <td>Sous-total</td>
+                        <td> 100 DHs</td>
+    
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="  ">
+                            <form class="bg-secondary text-white rounded-2 p-3 px-3">
+                                <label class="form-label " for="">"Optez pour une livraison 24h, expérience rapide et
+                                    fiable. Coût de
+                                    la fonctionnalité : 150 dirhams." </label>
+                                <input type="text" list="livrai" class="form-control   mx-5 w-75"
+                                    placeholder="(Normal *)                                    ▼">
+                                <datalist id="livrai">
+    
+                                    <option value="24 H">
+                                    <option value="48 H">
+                                    <option value="56 H">
+                                    <option value="80 H">
+                                </datalist>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <a href="./card bank.html" style="text-decoration: none !important; color: #000;width: 100%;">
+                                <div class=" bg-warning rounded-2 "
+                                    style="width: 100% !important;padding:5px !important;">
+                                    <h6 class="my-2 divcart  " style=" font-size: 10 !important; ;">Paiement :
+                                        <div class="d-inline "> <img src="./visa.png" class="mine"><img src="./jcb.png"
+                                                class="mine"><img src="./card (1).png" class="mine"><img src="./card.png"
+                                                class="mine"><img src="./american-express.png" class="mine"></div>
+                    
+                                    </h6>
+                                </div>
+                            </a>
+                        </td>
+                    </tr>
+    
+                </tbody>
+            </table>
+    
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const cardForm = document.getElementById('cardForm');
+            const confirmBtn = document.getElementById('confirmBtn');
+
+            function checkFormValidity() {
+                const inputs = cardForm.querySelectorAll('input[required]');
+                let isValid = true;
+                inputs.forEach(function (input) {
+                    if (!input.value.trim()) {
+                        isValid = false;
+                    }
+                });
+                return isValid;
+            }
+
+            function toggleConfirmBtnVisibility() {
+                if (checkFormValidity()) {
+                    confirmBtn.style.display = 'block';
+                } else {
+                    confirmBtn.style.display = 'none';
+
+                }
+            }
+
+            cardForm.addEventListener('input', toggleConfirmBtnVisibility);
+
+            confirmBtn.addEventListener('click', function () {
+                alert("Vos informations ont été ajoutées avec succès \n Please complete the payment process");
+            });
+        });
+    </script>
+ <script  src="./bootstrap.bundle.min.js"></script></body>
+
+</html>
